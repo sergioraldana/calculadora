@@ -1,0 +1,17 @@
+{
+    "name": "calculadora",
+    "version": "1.0.0",
+    "description": "Aplicación de calculadora",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "Sergio Renato Aldana Alvarez",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^11.2.3"
+    },
+    "dependencies": {
+        "mousetrap": "^1.6.5"
+    }
+}
