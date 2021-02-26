@@ -6,39 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
     <title>Calculadora</title>
 </head>
 
 <body>
 
     <div id="calculadora">
-        <div class="numeroDisplay" id="numeroActual">0</div>
-        <div class="numeroDisplay" id="resultado">0</div>
+        <div class="card">
+            <div class="numeroDisplay card-title" id="numeroActual">0</div>
+            <div class="numeroDisplay card-title" id="resultado">0</div>
+        </div>
+
         <div class="grid-container" id="botones">
-            <button class="btnCalc" id="botonSiete">7</button>
-            <button class="btnCalc" id="botonOcho">8</button>
-            <button class="btnCalc" id="botonNueve">9</button>
-            <button class="botonOp" id="suma">+</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonSiete">7</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonOcho">8</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonNueve">9</button>
+            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="suma">+</button>
 
-            <button class="btnCalc" id="botonCuatro">4</button>
-            <button class="btnCalc" id="botonCinco">5</button>
-            <button class="btnCalc" id="botonSeis">6</button>
-            <button class="botonOp" id="resta">-</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonCuatro">4</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonCinco">5</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonSeis">6</button>
+            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="resta">-</button>
 
-            <button class="btnCalc" id="botonUno">1</button>
-            <button class="btnCalc" id="botonDos">2</button>
-            <button class="btnCalc" id="botonTres">3</button>
-            <button class="botonOp" id="division">/</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonUno">1</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonDos">2</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonTres">3</button>
+            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="division">/</button>
 
             <div></div>
-            <button class="btnCalc" id="botonCero">0</button>
+            <button class="waves-effect waves-light btn-large grey darken-1" id="botonCero">0</button>
             <div></div>
-            <button class="botonOp" id="mult">x</button>
+            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="mult">x</button>
         </div>
     </div>
 
     <script>
         require('./index.js')
+        require('jquery')
+        require('hammerjs')
+        require('materialize-css')
     </script>
 
 </body>
