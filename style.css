@@ -1,4 +1,19 @@
 .grid-container {
     display: grid;
+    grid-template-columns: auto 300px;
+}
+
+#botones {
+    display: grid;
     grid-template-columns: auto auto auto auto;
+}
+
+#historial {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#operaciones {
+    height: 120px;
+    overflow-y: scroll;
 }

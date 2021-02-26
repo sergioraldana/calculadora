@@ -19,35 +19,53 @@
             <div class="numeroDisplay card-title" id="resultado">0</div>
         </div>
 
-        <div class="grid-container" id="botones">
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonSiete">7</button>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonOcho">8</button>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonNueve">9</button>
-            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="suma">+</button>
+        <div class="grid-container">
 
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonCuatro">4</button>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonCinco">5</button>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonSeis">6</button>
-            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="resta">-</button>
+            <div id="botones">
+                <button class="waves-effect waves-light btn-large red darken-4" id="botonC">C</button>
+                <button class="waves-effect waves-light btn-large red darken-4" id="botonAC">AC</button>
+                <div></div>
+                <div></div>
 
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonUno">1</button>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonDos">2</button>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonTres">3</button>
-            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="division">/</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonSiete">7</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonOcho">8</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonNueve">9</button>
+                <button class="waves-effect waves-light btn-large deep-orange darken-3" id="suma">+</button>
 
-            <div></div>
-            <button class="waves-effect waves-light btn-large grey darken-1" id="botonCero">0</button>
-            <div></div>
-            <button class="waves-effect waves-light btn-large deep-orange darken-3" id="mult">x</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonCuatro">4</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonCinco">5</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonSeis">6</button>
+                <button class="waves-effect waves-light btn-large deep-orange darken-3" id="resta">-</button>
+
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonUno">1</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonDos">2</button>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonTres">3</button>
+                <button class="waves-effect waves-light btn-large deep-orange darken-3" id="division">/</button>
+
+                <div></div>
+                <button class="waves-effect waves-light btn-large grey darken-1" id="botonCero">0</button>
+                <div></div>
+                <button class="waves-effect waves-light btn-large deep-orange darken-3" id="multi">x</button>
+                <div></div>
+            </div>
+
+            <div class="card blue-grey darken-1" id="historial">
+                <div class="card-content white-text">
+                    <span class="card-title">Historial</span>
+                    <ul id="operaciones">
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </div>
 
-    <script>
-        require('./index.js')
-        require('jquery')
-        require('hammerjs')
-        require('materialize-css')
-    </script>
+        <script>
+            require('./index.js')
+            require('jquery')
+            require('hammerjs')
+            require('materialize-css')
+        </script>
 
 </body>
 
